@@ -12,6 +12,7 @@
     - Alerts, Dialogs
     - Deeplinking
 1. 의존성 주입과 테스팅
+1. pointfree 완성본과 비교하며 라이브러리 사용에 대한 장단점 비교
 
 ## 일정
 
