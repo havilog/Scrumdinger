@@ -97,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				03131C2229EE8D47003445F0 /* ScrumdingerApp.swift */,
-				03131C4C29EEAF5D003445F0 /* Models.swift */,
 				03131C2429EE8D47003445F0 /* StandupsList.swift */,
+				03131C4C29EEAF5D003445F0 /* Models.swift */,
 				03131C2629EE8D48003445F0 /* Assets.xcassets */,
 				03131C2829EE8D48003445F0 /* Preview Content */,
 			);
