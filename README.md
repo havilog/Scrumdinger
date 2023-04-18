@@ -15,4 +15,18 @@
 ## 일정
 
 논의해봐야함
-6
+6주 정도?
+
+## 참고
+
+### Stack-Based Navigation Pros&Cons
+![image](https://user-images.githubusercontent.com/57659933/232756313-06bfb1e1-f3c1-413a-b241-efa5a70e093a.png)
+
+### Tree-Based Navigation Pros&Cons
+![image](https://user-images.githubusercontent.com/57659933/232756507-bad6b363-3415-44c2-a215-80917f792a95.png)
+
+### git참고
+
+[https://github.com/realm/Scrumdinger](https://github.com/realm/Scrumdinger)
+
+[https://github.com/pointfreeco/standups](https://github.com/pointfreeco/standups)
