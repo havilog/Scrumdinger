@@ -6,24 +6,62 @@
 //
 
 import SwiftUI
+import Combine
+
+@MainActor
+final class StandupListModel: ObservableObject {
+    @Published  var standups: [Standup]
+    
+    private var cancellables: Set<AnyCancellable> = .init()
+    
+    init(standups: [Standup]) {
+        self.standups = standups
+    }
+    
+    func addStandupButtonTapped() {
+        print("havi")
+        // present addStandup
+    }
+    
+    func standupTapped(standup: Standup) {
+        // push standup
+    }
+}
 
 struct StandupsList: View {
-    // viewModel
-    let mockStandUp: [Standup] = []
+    @ObservedObject var model: StandupListModel
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(self.mockStandUp) { standup in
-                    Button {
-                        // action Binding
-                    } label: {
-                        CardView(standup: standup)
+            bodyView
+                .toolbar {
+                    /*
+                    // Converting function value of type '@MainActor () -> ()' to '() -> Void' loses global actor 'MainActor'
+                    Button(action: model.addStandupButtonTapped) {
+                        Image(systemName: "plus")
                     }
-                    .listRowBackground(standup.theme.mainColor)
+                     */
+                    Button {
+                        model.addStandupButtonTapped()
+                    } label: {
+                        Image(systemName: "plus")
+                    }
                 }
+//                .sheet(isPresented: <#T##Binding<Bool>#>, onDismiss: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>, content: <#T##() -> View#>)
+                // TODO: navigationTitle, navigationDestination, alert 구현
+        }
+    }
+    
+    private var bodyView: some View {
+        List {
+            ForEach(model.standups) { standup in
+                Button {
+                    model.standupTapped(standup: standup)
+                } label: {
+                    CardView(standup: standup)
+                }
+                .listRowBackground(standup.theme.mainColor)
             }
-            // toolbar, navigationTitle, sheet, navigationDestination, alert 구현
         }
     }
 }
@@ -68,7 +106,7 @@ extension URL {
 
 struct StandupsList_Previews: PreviewProvider {
     static var previews: some View {
-        StandupsList()
+        StandupsList(model: .init(standups: [.designMock, .engineeringMock]))
             .previewDisplayName("Mocking initial standups")
     }
 }
