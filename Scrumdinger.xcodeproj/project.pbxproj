@@ -15,6 +15,7 @@
 		03131C3E29EE8D48003445F0 /* ScrumdingerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03131C3D29EE8D48003445F0 /* ScrumdingerUITests.swift */; };
 		03131C4029EE8D48003445F0 /* ScrumdingerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03131C3F29EE8D48003445F0 /* ScrumdingerUITestsLaunchTests.swift */; };
 		03131C4D29EEAF5D003445F0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03131C4C29EEAF5D003445F0 /* Models.swift */; };
+		032E0C6729F02E90000C7450 /* StandupForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E0C6629F02E90000C7450 /* StandupForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		03131C3D29EE8D48003445F0 /* ScrumdingerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerUITests.swift; sourceTree = "<group>"; };
 		03131C3F29EE8D48003445F0 /* ScrumdingerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		03131C4C29EEAF5D003445F0 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		032E0C6629F02E90000C7450 /* StandupForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				03131C2229EE8D47003445F0 /* ScrumdingerApp.swift */,
 				03131C2429EE8D47003445F0 /* StandupsList.swift */,
+				032E0C6629F02E90000C7450 /* StandupForm.swift */,
 				03131C4C29EEAF5D003445F0 /* Models.swift */,
 				03131C2629EE8D48003445F0 /* Assets.xcassets */,
 				03131C2829EE8D48003445F0 /* Preview Content */,
@@ -263,6 +266,7 @@
 				03131C4D29EEAF5D003445F0 /* Models.swift in Sources */,
 				03131C2529EE8D47003445F0 /* StandupsList.swift in Sources */,
 				03131C2329EE8D47003445F0 /* ScrumdingerApp.swift in Sources */,
+				032E0C6729F02E90000C7450 /* StandupForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

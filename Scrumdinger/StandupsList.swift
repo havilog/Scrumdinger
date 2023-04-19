@@ -10,7 +10,8 @@ import Combine
 
 @MainActor
 final class StandupListModel: ObservableObject {
-    @Published  var standups: [Standup]
+    @Published var standups: [Standup]
+    @Published var addModel: StandupFormModel?
     
     private var cancellables: Set<AnyCancellable> = .init()
     
@@ -19,8 +20,12 @@ final class StandupListModel: ObservableObject {
     }
     
     func addStandupButtonTapped() {
-        print("havi")
-        // present addStandup
+        addModel = .init()
+    }
+    
+    // FIXME: 뷰에서 일어나는 이벤트가 아닌 행위에 대한 이름을 담고 있어서 적절한 네이밍 필요
+    func dismissAddSheet() {
+        addModel = nil
     }
     
     func standupTapped(standup: Standup) {
@@ -34,22 +39,36 @@ struct StandupsList: View {
     var body: some View {
         NavigationStack {
             bodyView
-                .toolbar {
-                    /*
-                    // Converting function value of type '@MainActor () -> ()' to '() -> Void' loses global actor 'MainActor'
-                    Button(action: model.addStandupButtonTapped) {
-                        Image(systemName: "plus")
-                    }
-                     */
-                    Button {
-                        model.addStandupButtonTapped()
-                    } label: {
-                        Image(systemName: "plus")
-                    }
-                }
-//                .sheet(isPresented: <#T##Binding<Bool>#>, onDismiss: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>, content: <#T##() -> View#>)
+                .toolbar(content: plusButton)
+                .sheet(
+                    isPresented: Binding(
+                        get: { return model.addModel != nil },
+                        set: { newValue in
+                            if !newValue { model.dismissAddSheet() }
+                        }
+                    ),
+                    onDismiss: {
+                        // TODO: dismiss 했을 때 정책 보고 정리
+                    },
+                    content: standupFormView
+                )
                 // TODO: navigationTitle, navigationDestination, alert 구현
         }
+    }
+    
+    private func plusButton() -> some View {
+        /*
+        // Converting function value of type '@MainActor () -> ()' to '() -> Void' loses global actor 'MainActor'
+        Button(action: model.addStandupButtonTapped) {
+            Image(systemName: "plus")
+        }
+         */
+        Button {
+            model.addStandupButtonTapped()
+        } label: {
+            Image(systemName: "plus")
+        }
+        .accessibilityLabel("New Scrum")
     }
     
     private var bodyView: some View {
@@ -62,6 +81,14 @@ struct StandupsList: View {
                 }
                 .listRowBackground(standup.theme.mainColor)
             }
+        }
+    }
+    
+    private func standupFormView() -> some View {
+        NavigationStack {
+            StandupFormView(model: .init())
+                .navigationTitle("New standup")
+                // FIXME: 왜 툴바 form에서 붙이지 않고 여기서 붙이는지 알아보기
         }
     }
 }
