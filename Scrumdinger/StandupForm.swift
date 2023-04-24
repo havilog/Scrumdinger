@@ -5,22 +5,48 @@
 //  Created by havi.log on 2023/04/19.
 //
 
+import SwiftUI
 import Foundation
 
 @MainActor
 final class StandupFormModel: ObservableObject {
-    func dismissAddStandupButtonTapped() {
+    @Published var focus: Field?
+    @Published var standup: Standup
+    
+    var onDismissButtonTapped: () -> Void
+    var onAddButtonTapped: (Standup) -> Void
+    
+    enum Field: Hashable {
+        case attendee(UUID)
+        case title
+    }
+    
+    init(
+        standup: Standup,
+        onDismissButtonTapped: @escaping () -> Void,
+        onAddButtonTapped: @escaping (Standup) -> Void
+    ) {
+        self.standup = standup
+        self.onDismissButtonTapped = onDismissButtonTapped
+        self.onAddButtonTapped = onAddButtonTapped
+        if self.standup.attendees.isEmpty {
+            self.standup.attendees.append(Attendee(id: UUID()))
+        }
+    }
+    
+    func deleteAttendees(atOffsets indices: IndexSet) {
         
     }
     
-    func confirmAddStandupButtonTapped() {
-        
+    func addAttendeeButtonTapped() {
+        let attendee = Attendee(id: UUID())
+        self.standup.attendees.append(attendee)
+        self.focus = .attendee(attendee.id)
     }
 }
 
-import SwiftUI
-
 struct StandupFormView: View {
+    @FocusState var focus: StandupFormModel.Field?
     @ObservedObject var model: StandupFormModel
     
     var body: some View {
@@ -34,50 +60,48 @@ struct StandupFormView: View {
     private var bodyView: some View {
         Form {
             Section {
-                //        TextField("Title", text: self.$model.standup.title)
-                //          .focused(self.$focus, equals: .title)
+                TextField("Title", text: self.$model.standup.title)
+                    .focused(self.$focus, equals: .title)
                 HStack {
-                    //          Slider(value: self.$model.standup.duration.seconds, in: 5...30, step: 1) {
-                    //            Text("Length")
-                    //          }
-                    //          Spacer()
-                    //          Text(self.model.standup.duration.formatted(.units()))
+                    Slider(value: self.$model.standup.duration.seconds, in: 5...30, step: 1) {
+                        Text("Length")
+                    }
+                    Spacer()
+                    Text(self.model.standup.duration.formatted(.units()))
                 }
-                //        ThemePicker(selection: self.$model.standup.theme)
+                ThemePicker(selection: self.$model.standup.theme)
             } header: {
                 Text("Standup Info")
             }
             Section {
-                //        ForEach(self.$model.standup.attendees) { $attendee in
-                //          TextField("Name", text: $attendee.name)
-                //            .focused(self.$focus, equals: .attendee(attendee.id))
-                //        }
-                //        .onDelete { indices in
-                //          self.model.deleteAttendees(atOffsets: indices)
-                //        }
+                ForEach(self.$model.standup.attendees) { $attendee in
+                    TextField("Name", text: $attendee.name)
+                        .focused(self.$focus, equals: .attendee(attendee.id))
+                }
+                .onDelete { indices in
+                    self.model.deleteAttendees(atOffsets: indices)
+                }
                 
-                //        Button("New attendee") {
-                //          self.model.addAttendeeButtonTapped()
-                //        }
+                Button("New attendee") {
+                    self.model.addAttendeeButtonTapped()
+                }
             } header: {
                 Text("Attendees")
             }
         }
-        //    .bind(self.$model.focus, to: self.$focus)
+//        .bind(self.$model.focus, to: self.$focus)
     }
     
     private var dismissToolbarItem: some ToolbarContent {
         ToolbarItem(placement: .cancellationAction) {
-            Button("Dismiss") {
-                model.dismissAddStandupButtonTapped()
-            }
+            Button("Dismiss", action: model.onDismissButtonTapped)
         }
     }
     
     private var addToolbarItem: some ToolbarContent {
         ToolbarItem(placement: .confirmationAction) {
             Button("Add") {
-                model.confirmAddStandupButtonTapped()
+                model.onAddButtonTapped(model.standup)
             }
         }
     }
@@ -112,16 +136,12 @@ extension Duration {
 
 struct StandupForm_Previews: PreviewProvider {
     static var previews: some View {
-//        NavigationStack {
-//            StandupFormView(model: StandupFormModel(standup: .mock))
-//        }
-//        .previewDisplayName("Edit")
-        
         NavigationStack {
             StandupFormView(
                 model: StandupFormModel(
-//                    focus: .attendee(Standup.mock.attendees[3].id),
-//                    standup: .mock
+                    standup: .init(id: .init()),
+                    onDismissButtonTapped: { },
+                    onAddButtonTapped: { _ in }
                 )
             )
         }

@@ -10,26 +10,59 @@ import Combine
 
 @MainActor
 final class StandupListModel: ObservableObject {
-    @Published var standups: [Standup]
-    @Published var addModel: StandupFormModel?
+    @Published private(set) var standups: [Standup]
+    @Published private(set) var destination: Destination?
     
     private var cancellables: Set<AnyCancellable> = .init()
+    
+    enum Destination {
+        case add(StandupFormModel)
+    }
     
     init(standups: [Standup]) {
         self.standups = standups
     }
     
     func addStandupButtonTapped() {
-        addModel = .init()
+        // NOTE: closure, delegate 등 데이터 전달 방법 논의해보기
+        destination = .add(
+            .init(
+                standup: .init(id: .init()),
+                onDismissButtonTapped: { [weak self] in
+                    self?.handleDismissForm()
+                },
+                onAddButtonTapped: { [weak self] standup in
+                    self?.handleAddForm(with: standup)
+                }
+            )
+        )
     }
     
-    // FIXME: 뷰에서 일어나는 이벤트가 아닌 행위에 대한 이름을 담고 있어서 적절한 네이밍 필요
-    func dismissAddSheet() {
-        addModel = nil
-    }
+    // MARK: View Action
     
     func standupTapped(standup: Standup) {
-        // push standup
+        // TODO: drill down to standup detail
+    }
+    
+    // MARK: Delegate Action
+    
+    func handleDismissForm() {
+        destination = nil
+    }
+    
+    func handleAddForm(with standup: Standup) {
+        var standup = standup
+        
+        standup.attendees.removeAll { attendee in
+            attendee.name.allSatisfy(\.isWhitespace)
+        }
+        
+        if standup.attendees.isEmpty {
+            standup.attendees.append(Attendee(id: UUID()))
+        }
+        
+        standups.append(standup)
+        destination = nil
     }
 }
 
@@ -40,17 +73,28 @@ struct StandupsList: View {
         NavigationStack {
             bodyView
                 .toolbar(content: plusButton)
+                // FIXME: item으로는 못하려나
                 .sheet(
                     isPresented: Binding(
-                        get: { return model.addModel != nil },
+                        get: {
+                            if case .add = model.destination { return true }
+                            else { return false }
+                        },
                         set: { newValue in
-                            if !newValue { model.dismissAddSheet() }
+                            if !newValue { model.handleDismissForm() }
                         }
                     ),
-                    onDismiss: {
-                        // TODO: dismiss 했을 때 정책 보고 정리
-                    },
-                    content: standupFormView
+                    content: {
+                        NavigationStack {
+                            // FIXME: 여기 어떻게 해야 예쁠까??
+                            if case let .add(formModel) = model.destination {
+                                StandupFormView(model: formModel)
+                                    .navigationTitle("New standup")
+                            } else {
+                                EmptyView()
+                            }
+                        }
+                    }
                 )
                 // TODO: navigationTitle, navigationDestination, alert 구현
         }
@@ -81,14 +125,6 @@ struct StandupsList: View {
                 }
                 .listRowBackground(standup.theme.mainColor)
             }
-        }
-    }
-    
-    private func standupFormView() -> some View {
-        NavigationStack {
-            StandupFormView(model: .init())
-                .navigationTitle("New standup")
-                // FIXME: 왜 툴바 form에서 붙이지 않고 여기서 붙이는지 알아보기
         }
     }
 }
