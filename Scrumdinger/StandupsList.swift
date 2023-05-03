@@ -14,17 +14,21 @@ final class StandupListModel: ObservableObject {
     @Published private(set) var destination: Destination?
     
     private var cancellables: Set<AnyCancellable> = .init()
+    var onStandupTapped: ((Standup) -> Void)?
     
     enum Destination {
         case add(StandupFormModel)
     }
     
-    init(standups: [Standup]) {
+    init(
+        standups: [Standup] = [],
+        onStandupTapped: ((Standup) -> Void)? = nil
+    ) {
         self.standups = standups
+        self.onStandupTapped = onStandupTapped
     }
     
     func addStandupButtonTapped() {
-        // NOTE: closure, delegate 등 데이터 전달 방법 논의해보기
         destination = .add(
             .init(
                 standup: .init(id: .init()),
@@ -41,7 +45,7 @@ final class StandupListModel: ObservableObject {
     // MARK: View Action
     
     func standupTapped(standup: Standup) {
-        // TODO: drill down to standup detail
+        self.onStandupTapped?(standup)
     }
     
     // MARK: Delegate Action
@@ -70,43 +74,30 @@ struct StandupsList: View {
     @ObservedObject var model: StandupListModel
     
     var body: some View {
-        NavigationStack {
-            bodyView
-                .toolbar(content: plusButton)
-                // FIXME: item으로는 못하려나
-                .sheet(
-                    isPresented: Binding(
-                        get: {
-                            if case .add = model.destination { return true }
-                            else { return false }
-                        },
-                        set: { newValue in
-                            if !newValue { model.handleDismissForm() }
-                        }
-                    ),
-                    content: {
-                        NavigationStack {
-                            // FIXME: 여기 어떻게 해야 예쁠까??
-                            if case let .add(formModel) = model.destination {
-                                StandupFormView(model: formModel)
-                                    .navigationTitle("New standup")
-                            } else {
-                                EmptyView()
-                            }
+        bodyView
+            .toolbar(content: plusButton)
+            .sheet(
+                isPresented: Binding(
+                    get: {
+                        if case .add = model.destination { return true }
+                        else { return false }
+                    },
+                    set: { newValue in
+                        if !newValue { model.handleDismissForm() }
+                    }
+                ),
+                content: {
+                    NavigationStack {
+                        if case let .add(formModel) = model.destination {
+                            StandupFormView(model: formModel)
+                                .navigationTitle("New standup")
                         }
                     }
-                )
-                // TODO: navigationTitle, navigationDestination, alert 구현
-        }
+                }
+            )
     }
     
     private func plusButton() -> some View {
-        /*
-        // Converting function value of type '@MainActor () -> ()' to '() -> Void' loses global actor 'MainActor'
-        Button(action: model.addStandupButtonTapped) {
-            Image(systemName: "plus")
-        }
-         */
         Button {
             model.addStandupButtonTapped()
         } label: {
@@ -169,7 +160,14 @@ extension URL {
 
 struct StandupsList_Previews: PreviewProvider {
     static var previews: some View {
-        StandupsList(model: .init(standups: [.designMock, .engineeringMock]))
-            .previewDisplayName("Mocking initial standups")
+        StandupsList(
+            model: .init(
+                standups: [.designMock, .engineeringMock],
+                onStandupTapped: { standup in
+                    
+                }
+            )
+        )
+        .previewDisplayName("Mocking initial standups")
     }
 }
