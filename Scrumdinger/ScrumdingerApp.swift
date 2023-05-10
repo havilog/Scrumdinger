@@ -11,7 +11,11 @@ import SwiftUI
 struct ScrumdingerApp: App {
     var body: some Scene {
         WindowGroup {
-            StandupsList(model: StandupListModel(standups: []))
+            AppView(
+                model: AppModel(
+                    standupList: StandupListModel(standups: [])
+                )
+            )
         }
     }
 }
