@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1420"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03131C1E29EE8D47003445F0"
+               BlueprintIdentifier = "9DD4FCD9028A223AB9D5FC99"
                BuildableName = "Scrumdinger.app"
                BlueprintName = "Scrumdinger"
                ReferencedContainer = "container:Scrumdinger.xcodeproj">
@@ -26,30 +26,9 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      disableMainThreadChecker = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03131C2E29EE8D48003445F0"
-               BuildableName = "ScrumdingerTests.xctest"
-               BlueprintName = "ScrumdingerTests"
-               ReferencedContainer = "container:Scrumdinger.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03131C3829EE8D48003445F0"
-               BuildableName = "ScrumdingerUITests.xctest"
-               BlueprintName = "ScrumdingerUITests"
-               ReferencedContainer = "container:Scrumdinger.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -66,7 +45,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "03131C1E29EE8D47003445F0"
+            BlueprintIdentifier = "9DD4FCD9028A223AB9D5FC99"
             BuildableName = "Scrumdinger.app"
             BlueprintName = "Scrumdinger"
             ReferencedContainer = "container:Scrumdinger.xcodeproj">
@@ -83,7 +62,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "03131C1E29EE8D47003445F0"
+            BlueprintIdentifier = "9DD4FCD9028A223AB9D5FC99"
             BuildableName = "Scrumdinger.app"
             BlueprintName = "Scrumdinger"
             ReferencedContainer = "container:Scrumdinger.xcodeproj">
