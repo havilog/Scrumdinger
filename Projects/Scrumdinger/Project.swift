@@ -43,6 +43,9 @@ let project = Project(
             resources: [
                 "Resources/**"
             ],
+            dependencies: [
+                .external(name: <#T##String#>)
+            ],
             settings: settings
         )
     ],

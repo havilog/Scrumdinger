@@ -10,7 +10,7 @@ import Combine
 
 @MainActor
 final class StandupListModel: ObservableObject {
-    @Published private(set) var standups: [Standup]
+    @Published var standups: [Standup]
     @Published private(set) var destination: Destination?
     
     private var cancellables: Set<AnyCancellable> = .init()
@@ -160,14 +160,16 @@ extension URL {
 
 struct StandupsList_Previews: PreviewProvider {
     static var previews: some View {
-        StandupsList(
-            model: .init(
-                standups: [.designMock, .engineeringMock],
-                onStandupTapped: { standup in
-                    
-                }
+        NavigationStack {
+            StandupsList(
+                model: .init(
+                    standups: [.designMock, .engineeringMock],
+                    onStandupTapped: { standup in
+                        
+                    }
+                )
             )
-        )
+        }
         .previewDisplayName("Mocking initial standups")
     }
 }

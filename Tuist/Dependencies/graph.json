@@ -1,0 +1,841 @@
+{
+  "externalProjects" : [
+    "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios",
+    {
+      "sourceRootPath" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios",
+      "options" : {
+        "automaticSchemesOptions" : {
+          "disabled" : {
+
+          }
+        },
+        "disableShowEnvironmentVarsInScriptPhases" : false,
+        "disableBundleAccessors" : false,
+        "disableSynthesizedResourceAccessors" : true,
+        "textSettings" : {
+
+        }
+      },
+      "additionalFiles" : [
+
+      ],
+      "targets" : [
+        {
+          "scripts" : [
+
+          ],
+          "deploymentTarget" : {
+            "iOS" : {
+              "_0" : "11.0",
+              "_1" : 3
+            }
+          },
+          "prune" : false,
+          "bundleId" : "Lottie",
+          "copyFiles" : [
+
+          ],
+          "launchArguments" : [
+
+          ],
+          "dependencies" : [
+
+          ],
+          "additionalFiles" : [
+
+          ],
+          "name" : "Lottie",
+          "settings" : {
+            "base" : {
+              "SWIFT_ACTIVE_COMPILATION_CONDITIONS" : {
+                "array" : {
+                  "_0" : [
+                    "$(inherited)",
+                    "SWIFT_PACKAGE"
+                  ]
+                }
+              },
+              "CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER" : {
+                "string" : {
+                  "_0" : "NO"
+                }
+              },
+              "ENABLE_STRICT_OBJC_MSGSEND" : {
+                "string" : {
+                  "_0" : "NO"
+                }
+              },
+              "GCC_WARN_INHIBIT_ALL_WARNINGS" : {
+                "string" : {
+                  "_0" : "YES"
+                }
+              },
+              "ALWAYS_SEARCH_USER_PATHS" : {
+                "string" : {
+                  "_0" : "YES"
+                }
+              },
+              "USE_HEADERMAP" : {
+                "string" : {
+                  "_0" : "NO"
+                }
+              },
+              "GCC_NO_COMMON_BLOCKS" : {
+                "string" : {
+                  "_0" : "NO"
+                }
+              },
+              "FRAMEWORK_SEARCH_PATHS" : {
+                "array" : {
+                  "_0" : [
+                    "$(inherited)",
+                    "$(PLATFORM_DIR)\/Developer\/Library\/Frameworks"
+                  ]
+                }
+              },
+              "SWIFT_SUPPRESS_WARNINGS" : {
+                "string" : {
+                  "_0" : "YES"
+                }
+              },
+              "CLANG_ENABLE_OBJC_WEAK" : {
+                "string" : {
+                  "_0" : "NO"
+                }
+              },
+              "GCC_PREPROCESSOR_DEFINITIONS" : {
+                "array" : {
+                  "_0" : [
+                    "$(inherited)",
+                    "SWIFT_PACKAGE=1"
+                  ]
+                }
+              }
+            },
+            "configurations" : [
+              {
+                "name" : "Debug",
+                "variant" : "debug"
+              },
+              {
+                "settings" : {
+
+                }
+              },
+              {
+                "name" : "Release",
+                "variant" : "release"
+              },
+              {
+                "settings" : {
+
+                }
+              }
+            ],
+            "defaultSettings" : {
+              "recommended" : {
+                "excluding" : [
+
+                ]
+              }
+            }
+          },
+          "coreDataModels" : [
+
+          ],
+          "platform" : "ios",
+          "environment" : {
+
+          },
+          "sources" : [
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/Utility\/CachedImageProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/TransformLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Objects\/Mask.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/ShapeItems\/ShapeItem.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Debugging\/TestHelpers.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/ModifierNodes\/TrimPathNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/iOS\/UIColorExtension.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/PathNodes\/RectNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Extensions\/KeyedDecodingContainerExtensions.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/iOS\/AnimatedSwitch.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/CompLayers\/ShapeCompositionLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Animations\/CALayer+addAnimation.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/Primitives\/AnimationTime.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Text\/TextDocument.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Layers\/SolidLayerModel.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/macOS\/AnimationSubview.macOS.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/macOS\/AnimationViewBase.macOS.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/AnimationCache\/LRUAnimationCache.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/ShapeItems\/Star.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/CompLayers\/MaskContainerLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/ShapeItems\/ShapeTransform.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/ShapeItems\/Stroke.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/iOS\/FilepathImageProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/OutputNodes\/Renderables\/GradientStrokeRenderer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/Logging\/LottieLogger.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Animations\/OpacityAnimation.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Layers\/TextLayerModel.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/Primitives\/Color.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/iOS\/Compatibility\/CompatibleAnimationView.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/RenderNodes\/GradientStrokeNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/NodeProperties\/Protocols\/NodePropertyMap.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/iOS\/AnimationSubview.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/RenderContainers\/GroupNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/ShapeItemLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/ShapeItems\/Rectangle.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/Utility\/LayerTextProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Interpolatable\/KeyframeGroup+Extensions.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/Utility\/CompositionLayersInitializer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/ShapeItems\/Ellipse.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/AnimationLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/CoreAnimationLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Animations\/StrokeAnimation.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Extensions\/KeyframeGroup+exactlyOneKeyframe.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/CompLayers\/ImageCompositionLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Extensions\/ItemsExtension.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/Utility\/CoreTextRenderLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Extensions\/Bundle.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Animations\/ShapeAnimation.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Extensions\/BlendMode+Filter.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/Animation\/AnimationView.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Extensions\/CGFloatExtensions.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/NodeProperties\/NodeProperty.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/ImageLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Layers\/LayerModel.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/RenderLayers\/ShapeContainerLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/Utility\/LayerImageProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Assets\/PrecompAsset.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/OutputNodes\/Renderables\/StrokeRenderer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/CompLayers\/PreCompositionLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/CompLayers\/CompositionLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/DynamicProperties\/ValueProviders\/GradientValueProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Animations\/LayerProperty.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Protocols\/RenderNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Animations\/EllipseAnimation.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Primitives\/PathElement.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/Utility\/LayerTransformNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/iOS\/AnimatedControl.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/OutputNodes\/PathOutputNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/ImageProvider\/AnimationImageProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/iOS\/AnimationViewBase.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/iOS\/Compatibility\/CompatibleAnimationKeypath.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Primitives\/BezierPath.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/RepeaterLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/PathNodes\/EllipseNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/BaseAnimationLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Interpolatable\/InterpolatableExtensions.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/Keyframes\/Keyframe.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Protocols\/AnimatorNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/OutputNodes\/Renderables\/FillRenderer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/TextLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/FontProvider\/AnimationFontProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/DynamicProperties\/AnyValueProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/NodeProperties\/Protocols\/AnyNodeProperty.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Layers\/ShapeLayerModel.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/RenderNodes\/FillNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Animations\/TransformAnimations.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Assets\/ImageAsset.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Animations\/CustomPathAnimation.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/iOS\/AnimatedButton.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/PathNodes\/PolygonNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Layers\/ImageLayerModel.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Text\/TextAnimator.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Interpolatable\/KeyframeInterpolator.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Primitives\/CurveVertex.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Animations\/StarAnimation.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/ShapeItems\/Group.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/CompLayers\/NullCompositionLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Primitives\/CGPointExtension.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/OutputNodes\/Renderables\/GradientFillRenderer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/CompLayers\/TextCompositionLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/ShapeItems\/GradientStroke.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/ValueProviderStore.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Primitives\/ColorExtension.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Keyframes\/KeyframeGroup.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/NodeProperties\/ValueProviders\/SingleValueProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Objects\/Marker.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/Primitives\/Vectors.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/NodeProperties\/Protocols\/AnyValueContainer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Layers\/PreCompLayerModel.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/AnimationCache\/AnimationCacheProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/MainThreadAnimationLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Animation.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/DynamicProperties\/ValueProviders\/SizeValueProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/ShapeItems\/Shape.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/NodeProperties\/Protocols\/KeypathSearchable.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/DictionaryInitializable.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Text\/Glyph.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/RenderNodes\/GradientFillNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Primitives\/VectorsExtensions.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/LayerModel+makeAnimationLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Animations\/CombinedShapeAnimation.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Objects\/DashPattern.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Animations\/VisibilityAnimation.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/ShapeLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/RootAnimationLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/Animation\/AnimationViewInitializers.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Extensions\/AnimationKeypathExtension.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/CALayer+setupLayerHierarchy.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/SolidLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/DynamicProperties\/ValueProviders\/FloatValueProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/DynamicProperties\/AnimationKeypath.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Protocols\/PathNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/ShapeItems\/Repeater.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Debugging\/AnimatorNodeDebugging.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/LottieConfiguration.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/RenderNodes\/StrokeNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/RenderLayers\/ShapeRenderLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/CompLayers\/SolidCompositionLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/ShapeItems\/Fill.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/ShapeItems\/Trim.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/Utility\/LayerFontProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/PathNodes\/ShapeNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/CompatibilityTracker.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Extensions\/StringExtensions.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/NodeProperties\/ValueContainer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/ShapeItems\/GradientFill.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Extensions\/DataExtension.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/OutputNodes\/Renderables\/LegacyGradientFillRenderer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/DynamicProperties\/ValueProviders\/ColorValueProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/GradientRenderLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Primitives\/UnitBezier.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/PathNodes\/StarNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/iOS\/BundleImageProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Objects\/Transform.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Text\/Font.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/Text\/TextAnimatorNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Animations\/GradientAnimations.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/DynamicProperties\/ValueProviders\/PointValueProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Animations\/RectangleAnimation.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Animations\/CAAnimation+TimingConfiguration.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/Keyframes\/Interpolatable.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/OutputNodes\/PassThroughOutputNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/NodeProperties\/ValueProviders\/GroupInterpolator.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Debugging\/LayerDebugging.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Extensions\/CALayer+fillBounds.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/Animation\/AnimationPublic.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/NodeRenderSystem\/Nodes\/OutputNodes\/GroupOutputNode.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/macOS\/FilepathImageProvider.macOS.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/MaskCompositionLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Assets\/AssetLibrary.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Assets\/Asset.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/Keyframes\/KeyframeData.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/PreCompLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Extensions\/MathKit.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Extensions\/Keyframes+combinedIfPossible.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Extensions\/CGColor+RGB.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Interpolatable\/KeyframeExtensions.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/TextProvider\/AnimationTextProvider.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/MainThread\/LayerContainers\/Utility\/InvertedMatteLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Model\/ShapeItems\/Merge.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/CoreAnimation\/Layers\/BaseCompositionLayer.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Helpers\/AnimationContext.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Private\/Utility\/Primitives\/CompoundBezierPath.swift"
+            },
+            {
+              "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Sources\/Public\/macOS\/BundleImageProvider.macOS.swift"
+            }
+          ],
+          "resources" : [
+
+          ],
+          "product" : "staticFramework",
+          "playgrounds" : [
+
+          ],
+          "productName" : "Lottie",
+          "filesGroup" : {
+            "group" : {
+              "name" : "Project"
+            }
+          },
+          "rawScriptBuildPhases" : [
+
+          ],
+          "infoPlist" : {
+            "extendingDefault" : {
+              "with" : {
+
+              }
+            }
+          }
+        }
+      ],
+      "settings" : {
+        "base" : {
+
+        },
+        "configurations" : [
+          {
+            "name" : "Release",
+            "variant" : "release"
+          },
+          {
+            "settings" : {
+
+            }
+          },
+          {
+            "name" : "Debug",
+            "variant" : "debug"
+          },
+          {
+            "settings" : {
+
+            }
+          }
+        ],
+        "defaultSettings" : {
+          "recommended" : {
+            "excluding" : [
+
+            ]
+          }
+        }
+      },
+      "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios",
+      "isExternal" : true,
+      "filesGroup" : {
+        "group" : {
+          "name" : "Project"
+        }
+      },
+      "packages" : [
+
+      ],
+      "xcodeProjPath" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios\/Lottie.xcodeproj",
+      "resourceSynthesizers" : [
+        {
+          "template" : {
+            "defaultTemplate" : {
+              "_0" : "Strings"
+            }
+          },
+          "parser" : "strings",
+          "extensions" : [
+            "stringsdict",
+            "strings"
+          ]
+        },
+        {
+          "template" : {
+            "defaultTemplate" : {
+              "_0" : "Assets"
+            }
+          },
+          "parser" : "assets",
+          "extensions" : [
+            "xcassets"
+          ]
+        },
+        {
+          "template" : {
+            "defaultTemplate" : {
+              "_0" : "Plists"
+            }
+          },
+          "parser" : "plists",
+          "extensions" : [
+            "plist"
+          ]
+        },
+        {
+          "template" : {
+            "defaultTemplate" : {
+              "_0" : "Fonts"
+            }
+          },
+          "parser" : "fonts",
+          "extensions" : [
+            "otf",
+            "ttf",
+            "ttc"
+          ]
+        }
+      ],
+      "lastUpgradeCheck" : "99.9.9",
+      "schemes" : [
+
+      ],
+      "name" : "Lottie"
+    }
+  ],
+  "externalDependencies" : [
+    "ios",
+    {
+      "Lottie" : [
+        {
+          "project" : {
+            "target" : "Lottie",
+            "path" : "\/Users\/havi.log\/workspace\/havi\/Scrumdinger\/Tuist\/Dependencies\/SwiftPackageManager\/.build\/checkouts\/lottie-ios"
+          }
+        }
+      ]
+    }
+  ]
+}
